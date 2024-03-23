@@ -106,13 +106,13 @@
   }
   .main-table th, .main-table td { 
     border: 1px solid black; 
-    padding: 10; /* Убрали внутренний отступ, чтобы уменьшить расстояние между вложенными таблицами */
+    padding: 10; 
   }
   .nested-table { 
     border-collapse: collapse; 
-    margin: 0; /* Убрали отрицательный margin, теперь границы должны быть видны */
-    width: 80%; /* Задали ширину 100%, чтобы вложенные таблицы заполнили родительскую ячейку */
-    height: 50%; /* Задали высоту 100%, чтобы вложенные таблицы заполнили родительскую ячейку */
+    margin: 0; 
+    width: 80%; 
+    height: 50%; 
   }
   .nested-table td { 
     border: 1px solid black; 
