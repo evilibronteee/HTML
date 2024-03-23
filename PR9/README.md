@@ -63,7 +63,7 @@
 }
 
 .letter-spacing {
-    letter-spacing: 0.1em; /* Измените это значение по вашему усмотрению */
+    letter-spacing: 0.1em; 
 }
 ```
 
