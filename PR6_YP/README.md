@@ -10,40 +10,18 @@
 ### 8.Дана последовательность a1,a2,...,a15.Расположить элементы на четных местах по убыванию.
 ### Код программы:
 
-### (index.html)
 
 ```
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Сортировка элементов на четных позициях</title>
-    <script>
-        function sortEvenPositions() {
-            // Пример массива, который можно заменить на динамический ввод
-            let arr = [5, 1, 4, 3, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+def sort_even_indices_descending_simple(arr):
 
-            // Извлекаем элементы на четных позициях (индексы 1, 3, 5, ...)
-            let evenElements = arr.filter((_, index) => index % 2 === 1);
+  # Сортируем только элементы на четных индексах в порядке убывания
+  arr[1::2] = sorted(arr[1::2], reverse=True)
+  return arr
 
-            // Сортировка элементов в убывающем порядке
-            evenElements.sort((a, b) => b - a);
-
-            // Обратно вставляем отсортированные элементы на четные позиции
-            evenElements.forEach((element, index) => {
-                arr[index * 2 + 1] = element;
-            });
-
-            // Вывод результата
-            document.getElementById("result").innerText = "Отсортированный массив: " + arr.join(", ");
-        }
-    </script>
-</head>
-<body>
-    <h2>Сортировка элементов на четных позициях</h2>
-    <button onclick="sortEvenPositions()">Сортировать</button>
-    <p id="result"></p>
-</body>
-</html>
+# Пример массива
+arr = [5, 3, 2, 8, 9, 7, 1, 6, 0, 4, 11, 15, 13, 10, 12]
+sorted_arr = sort_even_indices_descending_simple(arr)
+print(sorted_arr)
 
 ```
 
@@ -52,4 +30,4 @@
 
 ### Результат работы программы: 
 
-![задание2](https://github.com/evilibronteee/HTML/blob/main/PR11/%D0%9F%D0%BE%D0%B4%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%87%D0%B8%D1%81%D0%B5%D0%BB%20-%20Google%20Chrome%2005.04.2024%2014_39_05.png?raw=true)
+![задание2](https://github.com/evilibronteee/HTML/blob/main/PR6_YP/Python%20-%20Replit%20-%20Google%20Chrome%2007.04.2024%2013_37_02.png?raw=true)
